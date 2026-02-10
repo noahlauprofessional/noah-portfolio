@@ -1,0 +1,129 @@
+html
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Lau | Senior Marketing & AI Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        @import url('https://fonts.googleapis.com');
+        body { font-family: 'Outfit', 'Noto Sans TC', sans-serif; background-color: #050508; color: #ffffff; scroll-behavior: smooth; }
+        .neon-blue { border: 1px solid rgba(59, 130, 246, 0.5); box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); }
+        .glass-panel { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.5s ease-in-out; }
+        /* 滑鼠觸碰放大效果 */
+        .glass-panel:hover { transform: scale(1.05); background: rgba(59, 130, 246, 0.08); border-color: rgba(59, 130, 246, 0.5); z-index: 10; }
+        .lang-hidden { display: none; }
+        .text-gradient { background: linear-gradient(135deg, #fff 40%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-[radial-gradient(circle_at_top,_#1e3a8a_0%,_#050508_70%)]">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 px-8 py-6 flex justify-between items-center bg-black/80 backdrop-blur-xl border-b border-white/5">
+        <div class="text-xl font-black italic tracking-tighter">NOAH<span class="text-blue-500">.</span>LAU</div>
+        <div class="flex items-center gap-6">
+            <button onclick="toggleLang()" class="neon-blue px-5 py-2 rounded-full text-[10px] font-bold tracking-widest hover:bg-blue-600 transition uppercase">中英切換 / Switch Language</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4 pt-16">
+        <div class="lang-zh">
+            <h2 class="text-blue-400 text-[10px] font-bold tracking-[0.8em] mb-4 uppercase">Senior Marketing Officer</h2>
+            <h1 class="text-6xl md:text-8xl font-black text-gradient tracking-tighter mb-8 italic">十載鋒忙<br>AI 影視導航</h1>
+            <p class="max-w-2xl text-gray-400 text-sm md:text-lg font-light mb-12 leading-loose italic">整合 <b>Google Gemini</b> 策略與 <b>Runway/HeyGen</b> 產能，<br>定義資深行銷人的專業高度。</p>
+        </div>
+        <div class="lang-en lang-hidden">
+            <h2 class="text-blue-400 text-[10px] font-bold tracking-[0.8em] mb-4 uppercase">Senior Marketing Officer</h2>
+            <h1 class="text-6xl md:text-8xl font-black text-gradient tracking-tighter mb-8 italic">10+ YEARS<br>STRATEGIC VISION</h1>
+            <p class="max-w-2xl text-gray-400 text-sm md:text-lg font-light mb-12 leading-loose italic">Mastering <b>Google Gemini</b> & <b>AI Production</b> <br>to redefine marketing excellence.</p>
+        </div>
+        <a href="#portfolio" class="bg-white text-black px-10 py-4 rounded-full font-black text-xs hover:bg-blue-500 hover:text-white transition duration-300">EXPLORE SHOWREELS</a>
+    </section>
+
+    <!-- Experience Cards (放大效果已加入) -->
+    <section id="experience" class="py-24 px-8 max-w-6xl mx-auto">
+        <h3 class="text-center text-[10px] tracking-[0.5em] text-blue-500 mb-16 font-bold uppercase">Work Experience / 工作背景</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Eton -->
+            <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group cursor-default">
+                <span class="text-blue-500 text-[10px] font-bold tracking-widest">2023 - PRESENT</span>
+                <h4 class="text-xl font-bold mt-4 lang-zh italic">西九龍中心 (Dragon Centre)</h4>
+                <h4 class="text-xl font-bold mt-4 lang-en lang-hidden italic">Dragon Centre</h4>
+                <p class="text-xs text-gray-400 mt-4 leading-relaxed lang-zh">Senior Marketing Officer. 利用 <b>AI 影視技術</b> 實現 35% 客流增長，主導 O2O 行銷轉型。</p>
+                <p class="text-xs text-gray-400 mt-4 leading-relaxed lang-en lang-hidden">Senior Marketing Officer. Driving 35% YoY growth via AI Video & O2O integration.</p>
+            </div>
+            <!-- Werfilming -->
+            <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group cursor-default">
+                <span class="text-gray-500 text-[10px] font-bold tracking-widest">2021 - 2023</span>
+                <h4 class="text-xl font-bold mt-4 lang-zh italic">Werfilming Co.</h4>
+                <h4 class="text-xl font-bold mt-4 lang-en lang-hidden italic">Werfilming Co.</h4>
+                <p class="text-xs text-gray-400 mt-4 leading-relaxed lang-zh">Founder & Creative Director. 掌管 P&L 管理、品牌建設與高品質影視生產。</p>
+                <p class="text-xs text-gray-400 mt-4 leading-relaxed lang-en lang-hidden">Founder & Creative Director. Expert in P&L, branding, and high-end video production.</p>
+            </div>
+            <!-- P&G -->
+            <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group cursor-default">
+                <span class="text-gray-500 text-[10px] font-bold tracking-widest">2018 - 2021</span>
+                <h4 class="text-xl font-bold mt-4 lang-zh italic">Procter & Gamble (P&G)</h4>
+                <h4 class="text-xl font-bold mt-4 lang-en lang-hidden italic">Procter & Gamble</h4>
+                <p class="text-xs text-gray-400 mt-4 leading-relaxed lang-zh">Category Assistant. 負責 $2,000 萬年度預算，精準操盤 FMCG 數據模型。</p>
+                <p class="text-xs text-gray-400 mt-4 leading-relaxed lang-en lang-hidden">Category Assistant. Managed $20M budget with high-level data analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Portfolio (YouTube 連結修復版) -->
+    <section id="portfolio" class="py-24 px-8 border-y border-white/5 bg-white/5">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-4xl font-black mb-16 italic tracking-tight">VIDEO PORTFOLIOS</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Noahportfolio -->
+                <div class="glass-panel p-12 rounded-[40px]">
+                    <i class="fab fa-youtube text-5xl text-red-600 mb-8"></i>
+                    <h4 class="text-2xl font-bold mb-4 lang-zh italic">個人行銷與 AI 專案</h4>
+                    <h4 class="text-2xl font-bold mb-4 lang-en lang-hidden italic">Marketing & AI Showreel</h4>
+                    <p class="text-gray-500 text-[10px] tracking-widest mb-10">@NOAHPORTFOLIO</p>
+                    <a href="https://www.youtube.com/@Noahportfolio" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full text-xs font-black tracking-[0.2em] transition">
+                        ENTER CHANNEL
+                    </a>
+                </div>
+                <!-- Werfilming -->
+                <div class="glass-panel p-12 rounded-[40px]">
+                    <i class="fab fa-youtube text-5xl text-blue-600 mb-8"></i>
+                    <h4 class="text-2xl font-bold mb-4 lang-zh italic">創意與創業作品</h4>
+                    <h4 class="text-2xl font-bold mb-4 lang-en lang-hidden italic">Creative Productions</h4>
+                    <p class="text-gray-500 text-[10px] tracking-widest mb-10">@WERFILMING_PRODUCTIONS</p>
+                    <a href="https://www.youtube.com/@werfilming_productions" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-xs font-black tracking-[0.2em] transition">
+                        ENTER CHANNEL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Background (Foundation) -->
+    <section class="py-20 text-center opacity-40">
+        <h3 class="text-[10px] tracking-[0.5em] mb-10 font-bold uppercase italic italic">Academic Background</h3>
+        <div class="flex flex-wrap justify-center gap-10 text-[11px] font-bold tracking-widest italic italic italic">
+            <span>NORTHUMBRIA UNIVERSITY - BA (HONS) BUSINESS</span>
+            <span>HKIVE - CIVIL ENGINEERING / QS / BUSINESS ADMIN</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center border-t border-white/5 opacity-40">
+        <div class="text-[9px] tracking-[0.8em] mb-4 uppercase">Noah Lau • Strategy • AI Creative</div>
+    </footer>
+
+    <script>
+        function toggleLang() {
+            const zh = document.querySelectorAll('.lang-zh');
+            const en = document.querySelectorAll('.lang-en');
+            zh.forEach(el => el.classList.toggle('lang-hidden'));
+            en.forEach(el => el.classList.toggle('lang-hidden'));
+        }
+    </script>
+</body>
+</html>
