@@ -1,147 +1,177 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html lang="zh-Hant-HK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Lau | Senior Marketing Officer | AI Video & Growth Specialist</title>
     
-    <!-- 解決 Google 搜尋顯示 GitHub Pages Documentation 的問題 -->
-    <title>Noah Lau | Senior Marketing & AI Video Strategy</title>
-    <meta name="title" content="Noah Lau | Senior Marketing & AI Video Strategy">
-    <meta name="description" content="Noah Lau - Senior Marketing Specialist. 擅長 AI 影視落地並驅動實質業績，具備 0 到 1 創業經驗與 P&G 數據背景。專精零售業 O2O 轉化及商戶業績增長。">
-    
-    <!-- HR / SEO 關鍵字優化 -->
-    <meta name="keywords" content="Noah Lau, Marketing Manager, O2O Marketing, Retail Strategy, Business Development, Video ROI, Digital Transformation, 零售營銷, 業績增長, 創業家思維, Digital Marketing Director, Content Strategy, Performance Marketing">
+    <!-- SEO Optimization -->
+    <meta name="description" content="Noah Lau's Professional Portfolio. Senior Marketing Officer at Dragon Centre (Eton Group), Ex-P&G, Founder of Werfilming. Specialist in AI Video Production & 113K+ Organic Viral Growth.">
+    <meta name="keywords" content="Noah Lau, Marketing Officer, AI Video, Dragon Centre, Werfilming, P&G, Digital Marketing, SEO, SEM, O2O Marketing">
     <meta name="author" content="Noah Lau">
-
-    <!-- Open Graph (社交媒體顯示) -->
-    <meta property="og:title" content="Noah Lau | Senior Marketing & AI Video Strategy">
-    <meta property="og:description" content="AI 影視落地，驅動實質業績。具備 0 到 1 創業實戰經驗。">
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     
     <style>
         @import url('https://fonts.googleapis.com');
-        body { font-family: 'Outfit', 'Noto Sans TC', sans-serif; background-color: #050508; color: #ffffff; scroll-behavior: smooth; }
-        .text-gradient { background: linear-gradient(135deg, #fff 40%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-panel { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.4s; }
-        .glass-panel:hover { transform: translateY(-8px); background: rgba(59, 130, 246, 0.08); border-color: rgba(59, 130, 246, 0.5); }
-        .neon-blue-btn { border: 1px solid rgba(59, 130, 246, 0.5); box-shadow: 0 0 15px rgba(59, 130, 246, 0.2); transition: 0.3s; }
-        .neon-blue-btn:hover { box-shadow: 0 0 25px rgba(59, 130, 246, 0.6); background: #3b82f6; }
-        .lang-hidden { display: none; }
-        /* 強化連結可點擊性 */
-        .yt-link { position: relative; z-index: 100; cursor: pointer !important; }
+        body { font-family: 'Inter', 'Noto Sans TC', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
+        
+        /* 3D Glass Effect & Hover logic */
+        .glass-card { 
+            background: rgba(30, 41, 59, 0.4); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(12px); 
+            border-radius: 1.5rem; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        }
+        .glass-card:hover { 
+            border-color: #38bdf8; 
+            background: rgba(30, 41, 59, 0.7); 
+            transform: translateY(-12px); 
+            box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15); 
+        }
+        .yt-card:hover { 
+            border-color: #ef4444; 
+            box-shadow: 0 20px 40px rgba(239, 68, 68, 0.15); 
+        }
+        
+        .lang-node { display: none; }
+        .lang-active { display: block; }
     </style>
 </head>
-<body class="bg-[radial-gradient(circle_at_top,_#1e3a8a_0%,_#050508_70%)]">
+<body class="antialiased">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-black/80 backdrop-blur-xl border-b border-white/5">
-        <div class="text-xl font-black italic tracking-tighter">NOAH<span class="text-blue-500">.</span>LAU</div>
-        <button onclick="toggleLang()" class="neon-blue-btn px-6 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase">中 / EN</button>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-slate-950/90 border-b border-white/10 backdrop-blur-md">
+        <div class="text-xl font-bold tracking-tighter uppercase">NOAH <span class="text-sky-400">LAU</span></div>
+        <div class="flex items-center space-x-4">
+            <button onclick="switchLang('en')" class="text-[10px] border border-white/20 px-3 py-1 rounded-full hover:bg-white/10 transition font-bold">EN</button>
+            <button onclick="switchLang('zh')" class="text-[10px] border border-white/20 px-3 py-1 rounded-full hover:bg-white/10 transition font-bold">中</button>
+            <a href="mailto:noahlau1026@gmail.com" class="text-xs bg-sky-600 px-5 py-2 rounded-full font-bold shadow-lg">Contact</a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <div class="lang-zh">
-            <h2 class="text-blue-400 text-[10px] font-bold tracking-[0.8em] mb-6 uppercase">Senior Marketing Officer</h2>
-            <h1 class="text-5xl md:text-8xl font-black text-gradient tracking-tighter mb-8 italic leading-tight">AI 影視落地<br>驅動實質業績</h1>
-            <p class="max-w-2xl text-gray-400 text-sm md:text-lg font-light mb-12 leading-relaxed">
-                擅長將最新 <b>AI 技術</b> 融入影音內容，為西九龍中心商戶打造高轉化率推廣。<br>
-                擁有從 0 到 1 的<b>創業實戰經驗</b>，精準整合線上流量與線下營業額。
+    <header class="min-h-screen flex items-center justify-center px-8 pt-20 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-sky-400 font-mono mb-6 tracking-widest text-xs uppercase">Strategy • AI Video • O2O Growth</h2>
+            <h1 class="text-4xl md:text-7xl font-bold mb-8 tracking-tight">
+                <span class="lang-node lang-active zh">數位營銷與 AI 影音專家</span>
+                <span class="lang-node en">Digital Marketing & AI Video Expert</span>
+            </h1>
+            <p class="text-slate-400 text-base md:text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+                <span class="lang-node lang-active zh">從 P&G 的商業邏輯到創辦 Werfilming，現於西九龍中心利用 AI 驅動內容，創造 **11.3萬+ 自然流量 (Organic Views)**，成功實踐 O2O 營銷策略。</span>
+                <span class="lang-node en">From P&G's business logic to founding Werfilming, now driving AI-powered content at Dragon Centre with **113K+ organic views**, successfully executing O2O marketing strategies.</span>
             </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#video-portfolio" class="bg-sky-600 text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-sky-500/20 hover:scale-105 transition">View Video Channels</a>
+                <a href="https://www.linkedin.com" target="_blank" class="border border-white/20 px-10 py-4 rounded-full hover:bg-white/10 transition">LinkedIn Profile</a>
+            </div>
         </div>
-        <div class="lang-en lang-hidden text-center">
-            <h2 class="text-blue-400 text-[10px] font-bold tracking-[0.8em] mb-6 uppercase">Senior Marketing Officer</h2>
-            <h1 class="text-5xl md:text-8xl font-black text-gradient tracking-tighter mb-8 italic leading-tight">AI VIDEO<br>ROI PERFORMANCE</h1>
-            <p class="max-w-2xl text-gray-400 text-sm md:text-lg font-light mb-12 leading-relaxed text-center">
-                Integrating latest <b>AI Technology</b> into video production for high-conversion retail marketing.<br>
-                Entrepreneurial spirit with a track record of bridging digital traffic to physical sales.
-            </p>
-        </div>
-        <div class="flex gap-4">
-            <a href="#portfolio" class="bg-white text-black px-8 py-4 rounded-full font-black text-xs hover:bg-blue-500 hover:text-white transition duration-300 uppercase">View Portfolios</a>
-            <a href="mailto:noahlau2610@gmail.com" class="border border-white/20 text-white px-8 py-4 rounded-full font-black text-xs hover:bg-white hover:text-black transition duration-300 uppercase">Contact Me</a>
-        </div>
-    </section>
+    </header>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-24 px-6 max-w-7xl mx-auto">
-        <h3 class="text-center text-[10px] tracking-[0.5em] text-blue-500 mb-16 font-bold uppercase">Professional History / 專業經歷</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-panel p-8 rounded-[2rem]">
-                <span class="text-blue-500 text-[10px] font-bold tracking-widest uppercase">2023 - Present</span>
-                <h4 class="text-2xl font-bold mt-4 lang-zh">西九龍中心</h4>
-                <h4 class="text-2xl font-bold mt-4 lang-en lang-hidden">Dragon Centre</h4>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed lang-zh">透過 AI 影像內容營銷實現 O2O 轉化，直接帶動實質可觀的銷售業績與商場租務增長。</p>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed lang-en lang-hidden">Driving O2O conversion via AI video strategies. Delivering measurable sales growth for tenants.</p>
-            </div>
-            <div class="glass-panel p-8 rounded-[2rem]">
-                <span class="text-gray-500 text-[10px] font-bold tracking-widest uppercase">2021 - 2023</span>
-                <h4 class="text-2xl font-bold mt-4 lang-zh">微拍製作 (Werfilming)</h4>
-                <h4 class="text-2xl font-bold mt-4 lang-en lang-hidden">Werfilming Co.</h4>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed lang-zh">從 0 到 1 親力親為：獨立統籌實體舖裝修、SEO/SEM 網上宣傳及日常營運。具備 360 度商業視角。</p>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed lang-en lang-hidden">Built from scratch. Managed physical store operations, SEO/SEM, and business development.</p>
-            </div>
-            <div class="glass-panel p-8 rounded-[2rem]">
-                <span class="text-gray-500 text-[10px] font-bold tracking-widest uppercase">2018 - 2021</span>
-                <h4 class="text-2xl font-bold mt-4 lang-zh">Procter & Gamble</h4>
-                <h4 class="text-2xl font-bold mt-4 lang-en lang-hidden">P&G</h4>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed lang-zh">管理大規模年度預算。運用數據模型優化產品市場佔有率，奠定嚴謹的成效導向營銷思維。</p>
-                <p class="text-sm text-gray-400 mt-4 leading-relaxed lang-en lang-hidden">Managed large-scale budgets and consumer data models. Data-driven marketing logic.</p>
-            </div>
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24 px-8 max-w-6xl mx-auto">
+        <div class="space-y-12">
+            
+            <!-- West Kowloon Centre -->
+            <article class="glass-card p-8 md:p-12">
+                <h3 class="text-2xl font-bold mb-2">Senior Marketing Officer</h3>
+                <p class="text-sky-400 font-medium mb-8 text-lg">西九龍中心 Dragon Centre (Eton Group) | 2023.07 - Present</p>
+                <div class="lang-node lang-active zh space-y-4 text-slate-300 text-sm leading-loose">
+                    <p><strong class="text-white">O2O 成功案例：</strong> 於 2026 年 1 月在 Instagram 創造 **11.3 萬自然流量**（Organic Reach，無付費推廣），有效證明線上曝光轉化為線下人流的實力。</p>
+                    <p><strong class="text-white">商戶深度賦能：</strong> 親自採訪百餘家租戶（食肆、零售、教育等），以獨家訪問風格精準定位賣點，提升租務價值與商場品牌力。</p>
+                    <p><strong class="text-white">名人與活動：</strong> 紀錄過百場大型活動與名人影像，包括修哥、薛家燕、相澤南、Mirror Alton 等及多名政商名人。</p>
+                    <p><strong class="text-white">高端地產與跨平台：</strong> 為 Eton 旗下豪宅（如 Queen's Garden, Apartment O）製作影音；管理小紅書帳戶與 KOL 拍攝。</p>
+                </div>
+                <div class="lang-node en space-y-4 text-slate-300 text-sm leading-loose">
+                    <p><strong class="text-white">O2O Success:</strong> Achieved **113K+ Organic Instagram Views** in Jan 2026, successfully converting online reach into offline foot traffic.</p>
+                    <p><strong class="text-white">Merchant Strategy:</strong> Interviewed 100+ tenants to highlight unique selling points, directly boosting leasing value and brand image.</p>
+                    <p><strong class="text-white">Celebrity & Events:</strong> Produced 100+ event videos featuring high-profile celebrities and government officials.</p>
+                    <p><strong class="text-white">Luxury Estates:</strong> Created visual content for Eton's luxury projects (Queen's Garden, Apartment O) and managed XiaoHongShu & KOL operations.</p>
+                </div>
+            </article>
+
+            <!-- Werfilming -->
+            <article class="glass-card p-8 md:p-12">
+                <h3 class="text-2xl font-bold mb-2">Founder & Creative Director</h3>
+                <p class="text-sky-400 font-medium mb-8 text-lg">Werfilming Productions (微拍製作) | 2021.05 - 2023.07</p>
+                <div class="lang-node lang-active zh text-slate-300 text-sm leading-relaxed">
+                    <p>由零開始獨立建立品牌，包括實體店選址、裝修、營運及網頁搭建。透過 **SEO/SEM** 策略獲取客源，服務範疇包括：<strong class="text-white">運動拍攝、人像、商業、室內裝修、婚攝及產品拍攝</strong>。</p>
+                </div>
+                <div class="lang-node en text-slate-300 text-sm leading-relaxed">
+                    <p>Built the physical brand from scratch, including renovation, operations, and web development. Leveraged SEO/SEM for growth. Specialized in: <strong class="text-white">Commercial, Sports, Interior, Wedding, and Portrait photography</strong>.</p>
+                </div>
+            </article>
+
+            <!-- P&G -->
+            <article class="glass-card p-8 md:p-12">
+                <h3 class="text-2xl font-bold mb-2">Category Assistant</h3>
+                <p class="text-sky-400 font-medium mb-8 text-lg">P&G (Procter & Gamble) | 2018.01 - 2021.05</p>
+                <div class="lang-node lang-active zh text-slate-300 text-sm space-y-4 leading-loose">
+                    <p><strong class="text-white">品牌管理：</strong> 接觸多個頂尖品牌，包括 Oral-B, Braun, Gillette, Olay 等。</p>
+                    <p><strong class="text-white">零售通路：</strong> 負責豐澤、蘇寧、百老匯、Sogo、萬寧、屈臣氏及各大藥房之數據對接與管理。</p>
+                    <p><strong class="text-white">數據職責：</strong> 維護銷售、採購、庫存與財務數據準確性。協調 GTM（上市策略）時間表與區域團隊對接，管理 POSM 運作及補單流程。</p>
+                </div>
+                <div class="lang-node en text-slate-300 text-sm space-y-4 leading-loose">
+                    <p><strong class="text-white">Brand Portfolio:</strong> Handled leading brands like Oral-B, Braun, Gillette, and Olay.</p>
+                    <p><strong class="text-white">Retail Channels:</strong> Managed data across Fortress, Broadway, Sogo, Mannings, Watsons, and local pharmacies.</p>
+                    <p><strong class="text-white">Responsibilities:</strong> Maintained merchandise planning data (Sales, Inventory, Financials). Coordinated GTM timelines and deliverables. Partnered with regional teams for system accuracy and POSM management.</p>
+                </div>
+            </article>
         </div>
     </section>
 
     <!-- Video Portfolio Section -->
-    <section id="portfolio" class="py-24 px-6 border-t border-white/5 bg-black/40">
-        <div class="max-w-7xl mx-auto text-center">
-            <h3 class="text-4xl font-black mb-16 italic uppercase tracking-tighter">Project Showreels</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                
-                <!-- Noahportfolio -->
-                <div class="glass-panel p-10 rounded-[3rem]">
-                    <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-red-600/20">
-                        <i class="fab fa-youtube text-2xl text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-2 lang-zh">市場推廣與商務專案</h4>
-                    <h4 class="text-2xl font-bold mb-2 lang-en lang-hidden">Marketing & Business Cases</h4>
-                    <p class="text-gray-500 text-[10px] tracking-widest mb-8 uppercase">Conversion Focused Content</p>
-                    <a href="https://www.youtube.com/@Noahportfolio" target="_blank" rel="noopener noreferrer" class="yt-link bg-white text-black px-10 py-4 rounded-full text-xs font-black tracking-widest hover:bg-blue-500 hover:text-white transition duration-300 block">
-                        OPEN YOUTUBE
-                    </a>
+    <section id="video-portfolio" class="py-24 bg-slate-950 px-8 text-center">
+        <h2 class="text-3xl font-bold mb-12 uppercase tracking-[0.2em]">Video Channels 作品集頻道</h2>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+            <!-- Noah Portfolio -->
+            <a href="https://www.youtube.com/@Noahportfolio" target="_blank" class="glass-card yt-card group block p-10 bg-slate-900 border-white/5">
+                <i class="fab fa-youtube text-5xl text-red-500 mb-6 group-hover:scale-110 transition duration-300"></i>
+                <div class="lang-node lang-active zh">
+                    <h4 class="text-xl font-bold mb-2">Noah Portfolio</h4>
+                    <p class="text-slate-400 text-sm italic">西九龍中心相關作品、名人專訪及過百條大型活動紀錄。</p>
                 </div>
+                <div class="lang-node en">
+                    <h4 class="text-xl font-bold mb-2">Noah Portfolio</h4>
+                    <p class="text-slate-400 text-sm italic">Dragon Centre campaigns, celebrity interviews, and 100+ event productions.</p>
+                </div>
+            </a>
 
-                <!-- Werfilming -->
-                <div class="glass-panel p-10 rounded-[3rem]">
-                    <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-600/20">
-                        <i class="fas fa-video text-2xl text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold mb-2 lang-zh">影像製作與創業作品</h4>
-                    <h4 class="text-2xl font-bold mb-2 lang-en lang-hidden">Production & Founding Works</h4>
-                    <p class="text-gray-500 text-[10px] tracking-widest mb-8 uppercase">Creative Direction</p>
-                    <a href="https://www.youtube.com/@werfilming_productions" target="_blank" rel="noopener noreferrer" class="yt-link bg-white text-black px-10 py-4 rounded-full text-xs font-black tracking-widest hover:bg-blue-500 hover:text-white transition duration-300 block">
-                        OPEN YOUTUBE
-                    </a>
+            <!-- Werfilming -->
+            <a href="https://www.youtube.com/@werfilming_productions" target="_blank" class="glass-card yt-card group block p-10 bg-slate-900 border-white/5">
+                <i class="fab fa-youtube text-5xl text-red-500 mb-6 group-hover:scale-110 transition duration-300"></i>
+                <div class="lang-node lang-active zh">
+                    <h4 class="text-xl font-bold mb-2">Werfilming Productions</h4>
+                    <p class="text-slate-400 text-sm italic">專業商業拍攝、運動動態視覺、婚禮紀錄及室內設計作品。</p>
                 </div>
-            </div>
+                <div class="lang-node en">
+                    <h4 class="text-xl font-bold mb-2">Werfilming Productions</h4>
+                    <p class="text-slate-400 text-sm italic">Commercial, sports visuals, and high-end interior photography.</p>
+                </div>
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 text-center">
-        <p class="text-gray-600 text-[10px] tracking-widest uppercase mb-4">
-            © <script>document.write(new Date().getFullYear())</script> Noah Lau. PERFORMANCE MARKETING & VIDEO STRATEGY.
-        </p>
-        <div style="opacity: 0; height: 0;">Digital Marketing Manager, O2O Conversion Expert, Business Development Manager, Retail Performance Marketing, Noah Lau Dragon Centre.</div>
+    <footer class="py-24 text-center border-t border-white/5 px-8">
+        <div class="flex justify-center space-x-12 mb-10">
+            <a href="mailto:noahlau1026@gmail.com" class="text-slate-400 hover:text-sky-400 transition text-2xl"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="text-[10px] text-slate-600 tracking-[0.3em] uppercase">© 2026 NOAH LAU. ALL RIGHTS RESERVED.</p>
     </footer>
 
     <script>
-        function toggleLang() {
-            const zhElements = document.querySelectorAll('.lang-zh');
-            const enElements = document.querySelectorAll('.lang-en');
-            zhElements.forEach(el => el.classList.toggle('lang-hidden'));
-            enElements.forEach(el => el.classList.toggle('lang-hidden'));
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-node').forEach(el => el.classList.remove('lang-active'));
+            if(lang === 'en') {
+                document.querySelectorAll('.en').forEach(el => el.classList.add('lang-active'));
+            } else {
+                document.querySelectorAll('.zh').forEach(el => el.classList.add('lang-active'));
+            }
         }
     </script>
 </body>
