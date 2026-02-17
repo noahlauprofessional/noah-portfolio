@@ -14,7 +14,7 @@
         body { font-family: 'Inter', 'Noto Sans TC', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
         .glass-card { background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); border-radius: 1.5rem; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .glass-card:hover { border-color: #38bdf8; background: rgba(30, 41, 59, 0.7); transform: translateY(-12px); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15); }
-        .yt-card:hover { border-color: #ef4444; box-shadow: 0 20px 40px rgba(239, 68, 68, 0.15); }
+        .yt-card:hover { border-color: ##38bdf8; box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15); }
         .lang-node { display: none; }
         .lang-active { display: block; }
     </style>
@@ -51,7 +51,10 @@
 
  <!-- Experience Timeline -->
     <section id="experience" class="py-24 px-8 max-w-6xl mx-auto">
-        <h3 class="text-2xl font-bold mb-16 opacity-50 uppercase tracking-[0.3em] text-center">Experience Insights 歷程指標</h3>
+                   <h3 class="text-2xl font-bold mb-12 text-center opacity-50 uppercase tracking-[0.3em]">
+    <span class="lang-node lang-active zh">歷程指標</span>
+    <span class="lang-node en">Experience Insights</span>
+</h3>
         
         <div class="space-y-16">
             
@@ -106,19 +109,19 @@
                 </div>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="p-4 bg-slate-900/50 rounded-xl text-center border border-white/5">
+                    <div class="metric-box p-4 text-center">
                         <div class="text-sky-400 text-xl font-bold">Top 3</div>
                         <div class="text-[10px] text-slate-500 uppercase mt-1">Google Search Rank</div>
                     </div>
-                    <div class="p-4 bg-slate-900/50 rounded-xl text-center border border-white/5">
+                    <div class="metric-box p-4 text-center">
                         <div class="text-sky-400 text-xl font-bold">80%</div>
                         <div class="text-[10px] text-slate-500 uppercase mt-1">Ops Automation</div>
                     </div>
-                    <div class="p-4 bg-slate-900/50 rounded-xl text-center border border-white/5">
+                    <div class="metric-box p-4 text-center">
                         <div class="text-sky-400 text-xl font-bold">300+</div>
                         <div class="text-[10px] text-slate-500 uppercase mt-1">B2B/B2C Clients</div>
                     </div>
-                    <div class="p-4 bg-slate-900/50 rounded-xl text-center border border-white/5">
+                    <div class="metric-box p-4 text-center">
                         <div class="text-sky-400 text-xl font-bold">35%</div>
                         <div class="text-[10px] text-slate-500 uppercase mt-1">Retention Rate</div>
                     </div>
@@ -161,12 +164,15 @@
                 <!-- Core Stack -->
     <section id="skills" class="py-24 bg-slate-950/50">
         <div class="max-w-4xl mx-auto px-8">
-            <h3 class="text-2xl font-bold mb-12 text-center opacity-50 uppercase tracking-[0.3em]">Technical Expertise</h3>
+            <h3 class="text-2xl font-bold mb-12 text-center opacity-50 uppercase tracking-[0.3em]">
+    <span class="lang-node lang-active zh">核心技術指標</span>
+    <span class="lang-node en">Technical Expertise</span>
+</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
                 <div class="space-y-4">
                     <h4 class="text-sky-400 font-bold uppercase text-xs tracking-widest">Production</h4>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Adobe Premiere</span><span class="skill-tag">Color Grading</span>
+                        <span class="skill-tag">Adobe Suite</span><span class="skill-tag">Cinematography</span>
                         <span class="skill-tag">AI Visual Gen</span>
                     </div>
                 </div>
@@ -191,11 +197,14 @@
     <!-- Video Portfolio Section -->
     <section id="video-portfolio" class="py-24 bg-slate-950 px-8">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-12 uppercase tracking-[0.2em]">Video Channels 作品集頻道</h2>
+            <h3 class="text-2xl font-bold mb-12 text-center opacity-50 uppercase tracking-[0.3em]">
+    <span class="lang-node lang-active zh">作品集頻道</span>
+    <span class="lang-node en">Video Channels</span>
+</h3>
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Noah Portfolio -->
                 <a href="https://www.youtube.com/@Noahportfolio" target="_blank" class="glass-card yt-card group block p-10 bg-slate-900 border-white/5">
-                    <i class="fab fa-youtube text-5xl text-red-500 mb-6 group-hover:scale-110 transition duration-300"></i>
+                    <i class="fab fa-youtube text-5xl text-sky-400 mb-6 group-hover:scale-110 transition duration-300"></i>
                     <div class="lang-node lang-active zh">
                         <h4 class="text-xl font-bold mb-2">Noah Portfolio</h4>
                         <p class="text-slate-400 text-sm italic">西九龍中心相關作品、商戶專訪及大型活動紀錄</p>
@@ -208,7 +217,7 @@
 
                 <!-- Werfilming -->
                 <a href="https://www.youtube.com/@werfilming_productions" target="_blank" class="glass-card yt-card group block p-10 bg-slate-900 border-white/5">
-                    <i class="fab fa-youtube text-5xl text-red-500 mb-6 group-hover:scale-110 transition duration-300"></i>
+                    <i class="fab fa-youtube text-5xl text-sky-400 mb-6 group-hover:scale-110 transition duration-300"></i>
                     <div class="lang-node lang-active zh">
                         <h4 class="text-xl font-bold mb-2">Werfilming Productions</h4>
                         <p class="text-slate-400 text-sm italic">專業影片製作作品集</p>
@@ -242,6 +251,7 @@
     </script>
 </body>
 </html>
+
 
 
 
